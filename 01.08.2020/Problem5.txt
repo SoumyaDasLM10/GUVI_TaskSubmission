@@ -1,0 +1,12 @@
+let arr = [['make', 'Ford'], ['model', 'Mustang'], ['year', 1964]];
+
+function fromListToObject(arr) {
+    var newObject = {};
+    arr.forEach(function(item){
+        newObject[item[0]] = item[1];
+    });    
+    return newObject;
+}
+
+let obj = fromListToObject(arr);
+console.log(obj);
