@@ -1,0 +1,14 @@
+class A{
+	constructor(n)
+	{
+		this.name = n
+	}
+	f1() { var name = "Hello";
+	console.log(this.name);console.log(name)}
+}
+ obj = new A("Som") 
+ obj1 = new A("Das") 
+
+
+obj.f1()
+obj1.f1()
